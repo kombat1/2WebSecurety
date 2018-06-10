@@ -4,7 +4,7 @@ Python Web Securety
 
 Как юзать мой софт 
 
-# h1 python3 2WebSecurety --Функция -параметр1 -параметр2
+# python3 2WebSecurety --Функция -параметр1 -параметр2
 
 ```
   ______        __   _    ____                           _         
@@ -23,6 +23,10 @@ Python Web Securety
 ![screenshot of sample](http://prikolol.16mb.com/MyProgram/2.png)
 # python3 2WebSecurety --ScanPort -u [сайт]
 Это самы простой сканер портов,если у вас все порты закрыты обратите внимание на сайт у сайта не должно быть открыты каталоги ```python 2WebSecurety --ScanPort -u www.google.com ```
+
+:white_check_mark: www.google.com
+
+:negative_squared_cross_mark: www.google.com/image
 
 # python3 2WebSecurety --PhpScan -f [Файл.php]
 Данная функция сканирует файлы на ```Shell code``` или ```BakcDoor``` иначе говоря 
