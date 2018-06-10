@@ -76,7 +76,7 @@ group.add_argument('--ScanPort',help='Scanning ports Using: --ScanPort -u [url]'
 group.add_argument('--PhpScan',help='Scanning php files Using: --PhpScan -f [file.php]',action='store_true')
 group.add_argument('--generatehash',help='generate hash Using: --generatehash -a [md5|sha256|sha512] -k [Hello World] or -f [file.txt]',action='store_true')
 group.add_argument('--sn1per',help='aim for inputs Using: --sn1per -u [url] --input1 [name] --input2 [name]',action='store_true')
-#group.add_argument('--CrackHash',help='Trying to crack your key Using: --CrackHash -k [hash Key]',action='store_true')
+
 
 
 
@@ -279,39 +279,6 @@ def sniper(url,form_input1,form_input2,file):
 			else:
 				print('XSS [-] =>','[',xss,']')
 
-
-
-#def CrackHash(hashKey):
-#	def md5decryption(hash_):
-#		form_data = {'hash': hash_, 'submit': 'Decrypt It!'}
-#		rs = requests.post('http://www.md5decryption.com/', data=form_data)
-#		match = re.search('Decrypted Text:(.+)', rs.text)
-#		# Если не нашли
-#		if not match:
-#			print('[FAIL] No Cracked [http://www.md5decryption.com/]')
-#		text = match.group(1)
-#		# Выцепляем ответ (пример "</b>kombat</font>")
-#		match = re.search('</b>(.+?)</font>', text)
-#		if match:
-#			result = print("[!][Cracked][key:",hash_,']',"[Decrypted:",match.group(1),"]")
-#			return match.group(1)
-#			print(result)		
-#		return text	
-#
-#	HashKey = hashKey # Передаем аргумент функций в переменную 
-#	page = requests.get("http://hashtoolkit.com/reverse-hash?hash="+HashKey) # Получаем содержимое сайта
-#	soup = BeautifulSoup(page.text, "html.parser") # Парсим сайт
-#	for tag in soup.findAll('span'): # открываем цикл для пойска тэга span
-#		try:
-#			print('[!] Алгоритм  [',tag['title'],']\n') # Выводим тэг с алгоритмом расшифровки 
-#			print('[!] Ключ  [',tag.text,']\n')# Выводим ключ
-#			return SystemExit
-#		except KeyError:
-#			print('[FAIL] No Cracked [http://hashtoolkit.com/reverse-hash?hash]')
-#			break
-#	md5decryption(hashKey)
-		
-	
 def generatehash(algoritm,key,file):
 	os.system('cls')
 	if not file:
