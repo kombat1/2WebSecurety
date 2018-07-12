@@ -36,6 +36,6 @@ Python Web Securety
 Функция ```sn1per``` Тут вы наводите на поля где по вашему мнению может находится уязвимость ```xss``` так же тут есть фозможность импортировать свой скрипты флагом -f [xss.txt] 
 ![screenshot of sample](http://prikolol.16mb.com/MyProgram/6.png)
 
-#python3 2WebSecurety.py --generatehash -a [md5|sha256|sha512] -k [key]
+# python3 2WebSecurety.py --generatehash -a [md5|sha256|sha512] -k [key]
 Самый простой криптографическая программа для хеширования ключа,также можно за хешировать текстовый файл -f [file.txt]
 ![screenshot of sample](http://prikolol.16mb.com/MyProgram/5.png)
