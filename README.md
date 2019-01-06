@@ -16,14 +16,14 @@ Python Web Securety
 ```
 # python3 2WebSecurety --scan -u [сайт]
 
-![screenshot of sample](https://ibb.co/mGqhSSG)
+![screenshot of sample](https://i.ibb.co/47T4JJ7/1.png)
 
 # python3 2WebSecurety --DetailScan -u [сайт] 
 Так же есть возможность использовать свой скрипты для этого нужно указать флаг и текстовый файл -f xss.txt
-![screenshot of sample](https://ibb.co/SwLTsFt)
+![screenshot of sample](https://i.ibb.co/XxwB2c7/2.png)
 # python3 2WebSecurety --ScanPort -u [сайт]
 Это самый простой сканер портов,если у вас все порты закрыты обратите внимание на сайт у сайта не должно быть открыты каталоги ```python 2WebSecurety --ScanPort -u www.google.com ```
-![screenshot of sample](https://ibb.co/dPhPPKb)
+![screenshot of sample](https://i.ibb.co/VgKggBH/3.png)
 
 :white_check_mark: www.google.com
 
@@ -31,12 +31,12 @@ Python Web Securety
 
 # python3 2WebSecurety --PhpScan -f [Файл.php]
 Данная функция сканирует файлы на ```Shell code``` или ```BakcDoor``` иначе говоря 
-![screenshot of sample](https://ibb.co/z7VXCDX)
+![screenshot of sample](https://i.ibb.co/xfq1wd1/4.png)
 
 # python3 2WebSecurety.py --sn1per -u [url] --input1 [name] --input2 [name]
 Функция ```sn1per``` Тут вы наводите на поля где по вашему мнению может находится уязвимость ```xss``` так же тут есть фозможность импортировать свой скрипты флагом -f [xss.txt] 
-![screenshot of sample](https://ibb.co/XLdp5Ld)
+![screenshot of sample](https://i.ibb.co/zxLb2xL/6.png)
 
 # python3 2WebSecurety.py --generatehash -a [md5|sha256|sha512] -k [key]
 Самый простой криптографическая утилита для хеширования ключа,также можно за хешировать текстовый файл -f [file.txt]
-![screenshot of sample](https://ibb.co/TRxX1F5)
+![screenshot of sample](https://i.ibb.co/ZKpsSkC/5.png)
